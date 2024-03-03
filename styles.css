@@ -1,18 +1,37 @@
-@media screen 
-    and (min-width:600 px)
-{
-    
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf'), format('truetype'), 
+    url('../fonts/montserrat-variablefont_wght-webfont.woff2'), format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calluna';
+    src: url('/fonts/Calluna-Regular.otf'), format('opentype');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
-
-html{
-    --main-background:#303030
-    --primary-text:
+@font-face {
+    font-family: 'catamaran';
+    src: url('/fonts/Catamaran-VariableFont_wght.ttf'), format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
 }
+html {
+    --dark-bg:#1B1A54;
+    --white-text:#FFFFFF;
+    --body-font: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --header-font: 
 
+}
 
 body{
     margin: 0;
+    font-family: var(--body-font);
+    font-weight: 400;
+    background-color: var(--dark-bg);
+    color: #FFFFFF;
 }
 
 
@@ -20,4 +39,8 @@ a:hover{
     background-color: ;
 }
 
-
+h2{
+    font-family: 'calluna', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen 
+    and (min-width:600 px){}
