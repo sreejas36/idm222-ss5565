@@ -1,3 +1,16 @@
+@media screen 
+    and (min-width:600 px)
+{
+    
+}
+
+
+html{
+    --main-background:#303030
+    --primary-text:
+}
+
+
 body{
     margin: 0;
 }
@@ -6,3 +19,5 @@ body{
 a:hover{
     background-color: ;
 }
+
+
