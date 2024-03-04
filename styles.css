@@ -22,25 +22,58 @@ html {
     --dark-bg:#1B1A54;
     --white-text:#FFFFFF;
     --body-font: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --header-font: 
+    --header-font: 'catamaran', 'calluna', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --periwinkle: #556AD8;
 
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: var(--periwinkle);
 }
 
 body{
     margin: 0;
     font-family: var(--body-font);
-    font-weight: 400;
+    font-weight: 100;
     background-color: var(--dark-bg);
+
     color: #FFFFFF;
 }
 
 
-a:hover{
-    background-color: ;
-}
 
 h2{
-    font-family: 'calluna', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--header-font);
 }
+
+.navigation{
+    color: #FFF;
+    height: 11vh;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 10%;
+    text-align: center;
+    margin-left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen 
     and (min-width:600 px){}
