@@ -51,6 +51,11 @@ h2{
     font-family: var(--header-font);
 }
 
+h4, h3 {
+    font-family: var(--body-font);
+    font-weight: 300;
+}
+
 .navigation{
     color: #FFF;
     height: 11vh;
