@@ -18,13 +18,21 @@
     font-weight: 100 900;
     font-style: normal;
 }
-html {
-    --dark-bg:#1B1A54;
-    --white-text:#FFFFFF;
-    --body-font: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --header-font: 'catamaran', 'calluna', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --periwinkle: #556AD8;
 
+@font-face {
+    font-family: 'cagliostro';
+    src: url('/fonts/Cagliostro-Regular.ttf'), format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --indigo:#1B1A54;
+    --white:#FFFFFF;
+    --periwinkle: #556AD8;
+    --montserrat: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --catamaran: 'catamaran', 'calluna', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --cagliostro: 'cagliostro',
 }
 
 a{
@@ -36,11 +44,20 @@ a:hover{
     color: var(--periwinkle);
 }
 
+.header {
+    color: #FFF;
+    font-family: var(--montserrat)
+    font-size: xx-large; /* pixel convert*/
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+}
+
 body{
     margin: 0;
-    font-family: var(--body-font);
+    font-family: var(--montserrat);
     font-weight: 100;
-    background-color: var(--dark-bg);
+    background-color: var(--indigo);
 
     color: #FFFFFF;
 }
@@ -48,11 +65,16 @@ body{
 
 
 h2{
-    font-family: var(--header-font);
+    font-family: var(--cagliostro);
+    font-size: 300;
+}
+
+.call-to-action{
+    font-family: var(--cagliostro);
 }
 
 h4, h3 {
-    font-family: var(--body-font);
+    font-family: var(--montserrat);
     font-weight: 300;
     display: flex;
 }
@@ -76,7 +98,12 @@ h4, h3 {
     display: flex;
 }
 
-
+.case-study-images{
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
 
 
 
