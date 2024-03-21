@@ -52,7 +52,10 @@ a{
 }
 
 a:hover{
-    color: var(--periwinkle);
+    color: var(--white);
+    background-color: var(--periwinkle);
+    padding: 7px;
+    border-radius: 30px;
 }
 
 .header {
