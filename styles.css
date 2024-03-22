@@ -244,6 +244,7 @@ nav{
     margin: auto;
     max-width: 80%;
     align-items: center;
+    margin-top: 5%;
 }
 
 .footer{
@@ -276,6 +277,7 @@ nav{
     .resume-grid {
         display:grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 5%;
     }
 
     .case-study-title{
@@ -317,6 +319,7 @@ nav{
     .resume-grid {
         display:grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 5%;
     }
 
     .case-study-title{
