@@ -101,12 +101,10 @@ body{
 
 h1{
     font-family: var(--cagliostro);
-    font-size: 600;
 }
 
 h2{
     font-family: var(--cagliostro);
-    font-size: 300;
 }
 
 .call-to-action{
@@ -138,7 +136,7 @@ p {
 
 .call-to-action {
     font-weight:800;
-    margin: 10 auto;
+    margin: 10%;
     text-align: center;
 }
 
