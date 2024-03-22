@@ -73,6 +73,7 @@ a{
     font-size: xx-large; /* pixel convert*/
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
 }
 
 html{
@@ -208,11 +209,11 @@ nav{
     text-align: center;
     width: 100%;
 }
-
+ƒro
 .project-page{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
     max-width: 100vh;
+    align-items: center;
 }
 
 .project-p {
@@ -286,7 +287,6 @@ nav{
         max-width: 90%; 
     }
 
-
     .introduction {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -309,94 +309,6 @@ nav{
     }
 
     .nav-menu ul {
-        flex-direction: row; 
-        display: flex;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .navigation {
-        display: flex;
-        margin-right: 10%
-    }
-
-    .nav-wrapper {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        background-color: var(--main-background); 
-    }
-}
-    /* and (min-width:600 px){} */
-
-
-
-    @media screen and (min-width: 576px) {
-        .button-container {
-            flex-direction: row; /* Buttons will be in a row on screens wider than 576px */
-            justify-content: center; /* Centers the buttons horizontally */
-        }
-
-        /*media queries*/ 
-/* large screens - base off tablet */
-@media (min-width: 452px) {
-    .introduction-blurb {
-        max-width: 80%;
-        text-align: center;
-        color: #EBEBEB; 
-        text-align:center;
-
-    }
-
-    .rounded-box {
-        max-width: 80%; 
-    }
-
-    footer h3 {
-        font-size: 1rem; 
-    }
-
-    .nav-buttons ul li a {
-        display: inline-block;
-    }
-
-
-    .introduction-image {
-        
-    }
-
-}
-
-/*medium screen*/
-@media (min-width: 768px) {
-    .introduction-blurb {
-        max-width: 90%; 
-    }
-
-    .rounded-box {
-        max-width: 90%; 
-    }
-
-    footer h3 {
-        font-size: 0.9rem; 
-    }
-
-    .introduction {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .resume-grid {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nav-buttons {
-        display: flex; 
-    }
-
-    .nav-buttons ul {
         flex-direction: row; 
         display: flex;
         margin: auto;
