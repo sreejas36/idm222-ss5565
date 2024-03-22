@@ -224,6 +224,12 @@ nav{
     margin-bottom: 5%;
     margin-top: 5%;
 }
+.cs-images{
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
 
 .project {
     color: #FFF;
@@ -361,6 +367,10 @@ nav{
     }
     .case-study-images{
         width:100%;
+    }
+
+    .cs-images{
+        width: 50%;
     }
     .gallery-grid{
         display: grid;
