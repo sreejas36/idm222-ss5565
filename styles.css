@@ -68,7 +68,7 @@ a:hover{
 }
 
 body{
-    margin: 0;
+    margin: 0px;
     font-family: var(--montserrat);
     font-weight: 100;
     background-color: var(--indigo);
@@ -101,7 +101,7 @@ h4, h3 {
 p {
     font-family: var(--montserrat);
     font-weight: 200;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .subtitle {
@@ -131,6 +131,18 @@ p {
     justify-content: space-between;
 }
 
+.button {
+    background-color:#B0355F;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-family: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: .5rem .5rem;
+    padding: 17px 20px;
+    border: #B0355F;
+    align-items: center;
+    justify-content: center;
+}
 
 .case-study-title{
     font-family: var(--cagliostro);
@@ -154,6 +166,19 @@ p {
     padding-top: 0rem;
     text-align: center;
     width: 100%;
+}
+
+.project-page{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100vh;
+}
+
+.project-p {
+    color: #FFF;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100vh;
 }
 
 .footer{
@@ -204,3 +229,79 @@ p {
     caption {
         font-size: 16px;
     }
+
+    @media screen and (min-width: 576px) {
+        .button-container {
+            flex-direction: row; /* Buttons will be in a row on screens wider than 576px */
+            justify-content: center; /* Centers the buttons horizontally */
+        }
+
+        /*media queries*/ 
+/* large screens - base off tablet */
+@media (min-width: 452px) {
+    .introduction-blurb {
+        max-width: 80%;
+        text-align: center;
+        color: #EBEBEB; 
+        text-align:center;
+
+    }
+
+    .rounded-box {
+        max-width: 80%; 
+    }
+
+    footer h3 {
+        font-size: 1rem; 
+    }
+
+    .nav-buttons ul li a {
+        display: inline-block;
+    }
+
+    .projects {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .introduction-image {
+        
+    }
+
+}
+
+/*medium screen*/
+@media (min-width: 768px) {
+    .introduction-blurb {
+        max-width: 90%; 
+    }
+
+    .rounded-box {
+        max-width: 90%; 
+    }
+
+    footer h3 {
+        font-size: 0.9rem; 
+    }
+
+    .introduction {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-grid {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-buttons {
+        display: flex; 
+    }
+
+    .nav-buttons ul {
+        flex-direction: row; 
+        display: flex;
+        margin: auto;
+    }
+}
