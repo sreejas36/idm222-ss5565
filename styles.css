@@ -64,7 +64,7 @@ a{
     font-size: xx-large; /* pixel convert*/
     margin-left: 10%;
     margin-right: 10%;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .projects {
@@ -76,7 +76,7 @@ a{
 }
 
 body{
-    margin: 0px;
+    margin: 0;
     font-family: var(--montserrat);
     font-weight: 100;
     background-color: var(--indigo);
@@ -125,18 +125,37 @@ p {
     text-align: center;
 }
 
+nav{
+    margin: 0;
+}
+
 .navigation{
     color: #FFF;
     height: 11vh;
     list-style: none;
-    margin: 0 auto;
-    margin-bottom: 0;
-    padding: 10%;
+    /* margin: 0; */
+    /* padding: 10%; */
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-    margin-left: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    padding:0
+}
+
+.hamburger{
+    margin: 0;
+}
+
+.page{
+    padding: 5%;
 }
 
 .button {
@@ -196,10 +215,10 @@ p {
     padding: 10%;
 }
 
-/*medium screen*/
+/*tablet screen*/
 @media (min-width: 768px) {
     .greeting {
-        max-width: 90%; 
+        max-width: 100%; 
     }
 
     .rounded-box {
@@ -217,7 +236,42 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .nav-buttons { 
+    .case-study-title{
+        padding: 5%;
+    }
+    .case-study{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70%;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .nav-menu ul {
+        flex-direction: row; 
+        display: flex;
+        margin: auto;
+    }
+}
+/*desktop screen*/
+@media (min-width: 1000px) {
+    .greeting {
+        max-width: 100%; 
+    }
+
+    .rounded-box {
+        max-width: 90%; 
+    }
+
+
+    .introduction {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-grid {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .case-study-title{
@@ -231,20 +285,12 @@ p {
         margin: auto;
     }
 
-    .nav-buttons ul {
+    .nav-menu ul {
         flex-direction: row; 
         display: flex;
         margin: auto;
     }
-
-/* mobile */
-@media screen and (min-width: 0px) and (max-width:767px)
-    .menu
-/* tablet */
-@media screen and (min-width: 768px) and (max-width:767px)
-
-/* desktop */
-@media screen and (min-width: 992px)
+}
 
 @media screen and (min-width: 768px) {
     .navigation {
