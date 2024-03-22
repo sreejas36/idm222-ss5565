@@ -223,6 +223,7 @@ nav{
     margin-top: 5%;
 }
 .cs-images{
+    justify-content: center;
     height: auto;
     width: 100%;
     margin-bottom: 5%;
@@ -368,6 +369,8 @@ nav{
     }
 
     .cs-images{
+        display: flex;
+        justify-content: center;
         width: 50%;
     }
     .gallery-grid{
