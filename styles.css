@@ -190,8 +190,15 @@ nav{
     margin: .5rem .5rem;
     padding: 17px 20px;
     border: #B0355F;
+    margin: auto;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.link {
+    align-items: center;
+    width: 50%;
 }
 
 .case-study-title{
