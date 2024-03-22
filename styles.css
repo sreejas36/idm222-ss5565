@@ -51,12 +51,12 @@ a{
     color: #FFFFFF;
 }
 
-a:hover{
+/* a:hover{
     color: var(--white);
     background-color: var(--periwinkle);
     padding: 7px;
     border-radius: 30px;
-}
+} */
 
 .header {
     color: #FFF;
@@ -65,6 +65,14 @@ a:hover{
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
+}
+
+.projects {
+    color: #FFF;
+    font-family: var(--cagliostro);
+    font-size: xx-large; /* pixel convert*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 body{
@@ -188,47 +196,72 @@ p {
     padding: 10%;
 }
 
+/*medium screen*/
+@media (min-width: 768px) {
+    .greeting {
+        max-width: 90%; 
+    }
 
+    .rounded-box {
+        max-width: 90%; 
+    }
+
+
+    .introduction {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-grid {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-buttons { 
+    }
+
+    .case-study-title{
+        padding: 5%;
+    }
+    .case-study{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 70%;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .nav-buttons ul {
+        flex-direction: row; 
+        display: flex;
+        margin: auto;
+    }
 
 /* mobile */
 @media screen and (min-width: 0px) and (max-width:767px)
-
+    .menu
 /* tablet */
-@media screen and (min-width: 0px) and (max-width:767px)
+@media screen and (min-width: 768px) and (max-width:767px)
 
 /* desktop */
-@media screen and (min-width: 0px) and (max-width:767px)
+@media screen and (min-width: 992px)
 
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+        margin-right: 10%
+    }
 
+    .nav-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: var(--main-background); 
+    }
+}
     /* and (min-width:600 px){} */
 
-    /* Mobile styles */
-@media screen and (min-width: 0px) and (max-width: 767px) {
-    html {
-        font-size: 16px;
-        line-height: 28px;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 24px;
-        line-height: 33px;
-    }
-    h3 {
-        font-size: 20px;
-        line-height: 33px;
-    }
-    h4 {
-        font-size: 18px;
-    }
-    .button {
-        font-size: 1rem;
-        line-height: 24px;
-    }
-    caption {
-        font-size: 16px;
-    }
+
 
     @media screen and (min-width: 576px) {
         .button-container {
@@ -259,11 +292,6 @@ p {
         display: inline-block;
     }
 
-    .projects {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
 
     .introduction-image {
         
