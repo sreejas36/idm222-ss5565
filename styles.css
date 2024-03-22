@@ -288,7 +288,10 @@ nav{
     }
 
     .me{
+        display: flex;
         max-width: 50%;
+        align-items: center;
+        justify-content: center;
     }
 
     .resume-grid {
@@ -334,7 +337,10 @@ nav{
     }
 
     .me{
+        display: flex;
         max-width: 70%;
+        align-items: center;
+        justify-content: center;
     }
 
     .resume-grid {
