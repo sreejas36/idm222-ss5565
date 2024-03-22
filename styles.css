@@ -158,6 +158,14 @@ nav{
     padding:0
 }
 
+.greeting {
+    /* max-width: 50%;  */
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .me {
     align-items: center;
     padding: 10%;
@@ -209,7 +217,7 @@ nav{
     text-align: center;
     width: 100%;
 }
-ƒro
+
 .project-page{
     margin: auto;
     max-width: 100vh;
@@ -232,6 +240,12 @@ nav{
     text-align: center;
 }
 
+.resume{
+    margin: auto;
+    max-width: 80%;
+    align-items: center;
+}
+
 .footer{
     background-color: var(--fuschia);
     text-align: center;
@@ -242,7 +256,11 @@ nav{
 /*tablet screen*/
 @media (min-width: 768px) {
     .greeting {
-        max-width: 100%; 
+        max-width: 80%; 
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .rounded-box {
@@ -280,7 +298,11 @@ nav{
 /*desktop screen*/
 @media (min-width: 1000px) {
     .greeting {
-        max-width: 100%; 
+        max-width: 50%; 
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .rounded-box {
