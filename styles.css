@@ -179,7 +179,7 @@ nav{
     align-items: center;
     padding: 10%;
     margin-top: 10%;
-    width: 75%;
+    max-width: 100%;
 }
 
 .hamburger{
@@ -287,14 +287,8 @@ nav{
         margin-bottom: 5%;
     }
 
-    .rounded-box {
-        max-width: 90%; 
-    }
-
-
-    .introduction {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .me{
+        max-width: 50%;
     }
 
     .resume-grid {
@@ -339,13 +333,8 @@ nav{
         margin-bottom: 5%;
     }
 
-    .rounded-box {
-        max-width: 90%; 
-    }
-
-    .introduction {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .me{
+        max-width: 70%;
     }
 
     .resume-grid {
